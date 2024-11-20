@@ -5,14 +5,14 @@ const emojis = [
     "😻",
     "😈",
     "😈",
-    "🐭",
-    "🐭",
+    "💀",
+    "💀",
     "🐰",
     "🐰",
     "🐺",
     "🐺",
-    "🕷",
-    "🕷",
+    "👾",
+    "👾",
     "🦊",
     "🦊",
 ]
@@ -42,8 +42,8 @@ function cliquei() {
 
 function VerificarPartida(){
     if (OpenCards[0].innerHTML === OpenCards[1].innerHTML){
-        OpenCards[0].classList.add("ACERTOU!")
-        OpenCards[1].classList.add("ACERTOU!")  
+        OpenCards[0].classList.add("ACERTOU")
+        OpenCards[1].classList.add("ACERTOU")
     } else{
         OpenCards[0].classList.remove("Veja")
         OpenCards[1].classList.remove("Veja")
@@ -51,7 +51,7 @@ function VerificarPartida(){
 
     OpenCards = [];
 
-    if (document.querySelectorAll(".ACERTOU!").length === emojis.length){
+    if (document.querySelectorAll(".ACERTOU").length === emojis.length){
         alert("VOCÊ VENCEU!!")
     }
 }
