@@ -36,7 +36,7 @@ function cliquei() {
     }
 
     if (OpenCards.length == 2) {
-        setTimeout(VerificarPartida(), 1000);
+        setTimeout(VerificarPartida, 500);
     }
 }
 
@@ -44,6 +44,8 @@ function VerificarPartida(){
     if (OpenCards[0].innerHTML === OpenCards[1].innerHTML){
         OpenCards[0].classList.add("ACERTOU")
         OpenCards[1].classList.add("ACERTOU")
+        OpenCards[0].classList.remove("Veja")
+        OpenCards[1].classList.remove("Veja")
     } else{
         OpenCards[0].classList.remove("Veja")
         OpenCards[1].classList.remove("Veja")

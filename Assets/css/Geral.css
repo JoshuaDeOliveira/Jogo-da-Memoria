@@ -1,7 +1,6 @@
 main{
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: rgb(211, 104, 202);
 
     height: 100vh;
@@ -15,8 +14,7 @@ main{
 
 .Jogo{
     background:linear-gradient(148deg, rgba(151,130,179,1) 0%, rgba(68,30,99,1) 30%, rgba(77,27,111,1) 100%);
-    height: 100vh;
-    width: 45vw;
+    width: 600px;
 
     display: flex;
     flex-direction: column;
@@ -87,6 +85,14 @@ h1{
 
 .cards.Veja{
     transform: rotateY(0deg);
+}
+
+.cards.ACERTOU{
+    transform: rotateY(0deg);
+}
+
+.ACERTOU::after{
+    transform: rotateY(180deg)
 }
 
 .Veja::after{
